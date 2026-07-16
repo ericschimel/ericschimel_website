@@ -34,7 +34,9 @@
   </div>
   <div class="content">
     <div class="content-inner narrow">
-      <form class="contact-form" action="https://formspree.io/f/mzdndaaz" method="POST">
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="6134d78c-e432-4ef6-9a31-ab7b158cc319">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="field-row">
           <label>Name <span class="req">*</span>
             <div class="two-up">
@@ -55,7 +57,7 @@
         </div>
         <div class="field-row">
           <label>Subject <span class="req">*</span>
-            <input type="text" name="_subject" required>
+            <input type="text" name="subject" required>
           </label>
         </div>
         <div class="field-row">
