@@ -26,12 +26,10 @@ No build step — edit the HTML/CSS directly and commit.
 ## Contact form
 
 GitHub Pages is static, so the old Squarespace form backend is gone. The form in
-`contact/index.html` is wired for [Formspree](https://formspree.io) (free tier is fine):
-
-1. Create a form at formspree.io and copy its ID.
-2. In `contact/index.html`, replace `YOUR_FORM_ID` in the form's `action` attribute.
-
-Until then, the form displays but submissions will not be delivered.
+`contact/index.html` posts to [Formspree](https://formspree.io) (endpoint
+`https://formspree.io/f/mzdndaaz`). The Subject field is named `_subject`, so it
+sets the subject line of the notification email. Manage submissions and
+notification settings from the Formspree dashboard.
 
 ## Notes on the migration
 
